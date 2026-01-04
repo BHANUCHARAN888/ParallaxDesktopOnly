@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BHANU-SLIDER</title>
+
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Zenitha";
+    src: url(ZenithaClassic_PERSONAL_USE_ONLY.otf);
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.gradient{
+    font-family: "Zenitha", sans-serif;
+    font-weight: bolder;
+    font-size: clamp(24px, 4vw, 42px);
+    background: linear-gradient(90deg, #ff0033 0%, #02013b 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: center;
+    padding: 20px;
+}
+
+.placing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.place{
+    position: absolute;
+    top: 150px;
+    right: 50px;
+}
+
+/* Common section styles */
+section{
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Individual backgrounds */
+.section-1{ background-image: url('WhatsApp Image 2026-01-04 at 7.58.19 AM.jpeg'); }
+.section-2{ background-image: url('WhatsApp Image 2026-01-03 at 10.53.17 PM.jpeg'); }
+.section-3{ background-image: url('WhatsApp Image 2026-01-04 at 7.55.57 AM.jpeg'); }
+.section-4{ background-image: url('WhatsApp Image 2026-01-03 at 10.54.29 PM.jpeg'); }
+.section-5{ background-image: url('WhatsApp Image 2026-01-03 at 10.54.10 PM.jpeg'); }
+
+/* Parallax only on large screens */
+@media (min-width: 1024px){
+    section{
+        background-attachment: fixed;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<section class="section-1 placing">
+    <div class="gradient place">
+        <h2>Hello</h2>
+        <p>I am Bhanu Charan</p>
+    </div>
+</section>
+
+<section class="section-2 placing">
+    <div class="gradient">
+        <h2>How this looks?</h2>
+        <p>Looking cool right</p>
+    </div>
+</section>
+
+<section class="section-3 placing">
+    <div class="gradient">
+        <h2>This page is done</h2>
+        <p>Using HTML & CSS</p>
+    </div>
+</section>
+
+<section class="section-4 placing">
+    <div class="gradient">
+        <h2>Self-Learning</h2>
+        <p>Udemy • YouTube • GeeksForGeeks</p>
+    </div>
+</section>
+
+<section class="section-5 placing">
+    <div class="gradient">
+        <h2>Thanks</h2>
+        <p>For viewing my webpage</p>
+    </div>
+</section>
+
+</body>
+</html>
